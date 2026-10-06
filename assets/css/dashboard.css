@@ -1,0 +1,95 @@
+/* Estilos específicos do dashboard complementares ao estilo global */
+
+/* Ajuste do Mapa Leaflet */
+#mapa {
+    height: 450px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+/* Detalhes específicos de tabelas do painel */
+.prioridade-alta {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.empty-state {
+    text-align: center;
+    color: #7f8c8d;
+    padding: 20px !important;
+    font-style: italic;
+}
+
+/* Cards de boas vindas (Topo do dashboard) */
+.welcome-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-card h1 {
+    font-size: 1.8rem;
+    color: #0f172a;
+    margin: 5px 0 10px 0;
+}
+
+.welcome-card p {
+    color: #64748b;
+    margin: 0;
+}
+
+.welcome-card .eyebrow {
+    font-size: 0.8rem;
+    color: #0284c7;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.welcome-icon {
+    font-size: 4rem;
+    color: rgba(2, 132, 199, 0.1);
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #e2e8f0;
+    margin: 20px 0;
+}
+
+/* =========================================================
+   LAYOUT DOS CARTÕES E ATALHOS
+   ========================================================= */
+.cards-grid, .actions-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+    gap: 1.5rem !important;
+    width: 100% !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.actions-grid .action-card {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 1.5rem !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    min-height: 120px !important;
+}
+
+.actions-grid .action-card i {
+    font-size: 2rem !important;
+    margin-bottom: 10px !important;
+    display: block !important;
+}
